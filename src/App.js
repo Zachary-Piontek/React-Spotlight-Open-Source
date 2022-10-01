@@ -7,16 +7,16 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <Link to="/table">Table</Link>
-        <Link to="/charts">Charts</Link>
+        <Link className="text-3xl font-bold underline" to="/table">Table</Link>
+        <Link className="text-3xl font-bold underline" to="/charts">Charts</Link>
       </nav>
       <Switch>
         <Route path="/table">
-          <h1>Table Libary</h1>
+          <h1 className="text-3xl font-bold">Table Library</h1>
           <Table />
         </Route>
         <Route path="/charts">
-          <h1>Chart Library</h1>
+          <h1 className="text-3xl font-bold">Chart Library</h1>
           <Charts />
         </Route>
       </Switch>
